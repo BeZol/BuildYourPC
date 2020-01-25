@@ -3,27 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24C132BB90CDA32AB02831A2 /* Pods_BuildYourPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45880F4F82B8714DA7B4045 /* Pods_BuildYourPC.framework */; };
 		52BFF02523DB3066009F1F47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF02423DB3066009F1F47 /* AppDelegate.swift */; };
-		52BFF02723DB3066009F1F47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF02623DB3066009F1F47 /* SceneDelegate.swift */; };
 		52BFF02923DB3066009F1F47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF02823DB3066009F1F47 /* ViewController.swift */; };
-		52BFF02C23DB3066009F1F47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BFF02A23DB3066009F1F47 /* Main.storyboard */; };
 		52BFF02E23DB3068009F1F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BFF02D23DB3068009F1F47 /* Assets.xcassets */; };
-		52BFF03123DB3068009F1F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BFF02F23DB3068009F1F47 /* LaunchScreen.storyboard */; };
+		52BFF03D23DB318D009F1F47 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF03C23DB318D009F1F47 /* ContentViewController.swift */; };
+		52BFF05F23DB3B74009F1F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BFF05E23DB3B74009F1F47 /* LaunchScreen.storyboard */; };
+		52BFF06123DB3CD1009F1F47 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF06023DB3CD1009F1F47 /* NavigationController.swift */; };
+		52BFF06323DB3ED2009F1F47 /* BuildsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF06223DB3ED2009F1F47 /* BuildsViewController.swift */; };
+		52BFF06523DB3F56009F1F47 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF06423DB3F56009F1F47 /* NavigationBar.swift */; };
+		52BFF06723DB41A2009F1F47 /* BuildDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF06623DB41A2009F1F47 /* BuildDetailsViewController.swift */; };
+		52BFF06A23DB45FE009F1F47 /* Queues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF06823DB45FD009F1F47 /* Queues.swift */; };
+		52BFF06B23DB45FE009F1F47 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF06923DB45FE009F1F47 /* Constants.swift */; };
+		52BFF06F23DB4616009F1F47 /* HardwareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF06D23DB4615009F1F47 /* HardwareManager.swift */; };
+		52BFF07023DB4616009F1F47 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF06E23DB4616009F1F47 /* FirestoreManager.swift */; };
+		52BFF07523DB4646009F1F47 /* Motherboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF07223DB4644009F1F47 /* Motherboard.swift */; };
+		52BFF07623DB4646009F1F47 /* GPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF07323DB4645009F1F47 /* GPU.swift */; };
+		52BFF07723DB4646009F1F47 /* Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF07423DB4646009F1F47 /* Hardware.swift */; };
+		52BFF07923DB465D009F1F47 /* ImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFF07823DB465D009F1F47 /* ImageHandler.swift */; };
+		52BFF07B23DB4671009F1F47 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52BFF07A23DB4671009F1F47 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A54AD39C731F80F5F5B516B /* Pods-BuildYourPC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuildYourPC.release.xcconfig"; path = "Target Support Files/Pods-BuildYourPC/Pods-BuildYourPC.release.xcconfig"; sourceTree = "<group>"; };
+		2B1A17474A469D91E843A1AC /* Pods-BuildYourPC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuildYourPC.debug.xcconfig"; path = "Target Support Files/Pods-BuildYourPC/Pods-BuildYourPC.debug.xcconfig"; sourceTree = "<group>"; };
 		52BFF02123DB3066009F1F47 /* BuildYourPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildYourPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BFF02423DB3066009F1F47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52BFF02623DB3066009F1F47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		52BFF02823DB3066009F1F47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		52BFF02B23DB3066009F1F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52BFF02D23DB3068009F1F47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		52BFF03023DB3068009F1F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52BFF03223DB3068009F1F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52BFF03C23DB318D009F1F47 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		52BFF05E23DB3B74009F1F47 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52BFF06023DB3CD1009F1F47 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		52BFF06223DB3ED2009F1F47 /* BuildsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildsViewController.swift; sourceTree = "<group>"; };
+		52BFF06423DB3F56009F1F47 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		52BFF06623DB41A2009F1F47 /* BuildDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildDetailsViewController.swift; sourceTree = "<group>"; };
+		52BFF06823DB45FD009F1F47 /* Queues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queues.swift; sourceTree = "<group>"; };
+		52BFF06923DB45FE009F1F47 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		52BFF06D23DB4615009F1F47 /* HardwareManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardwareManager.swift; sourceTree = "<group>"; };
+		52BFF06E23DB4616009F1F47 /* FirestoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		52BFF07223DB4644009F1F47 /* Motherboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motherboard.swift; sourceTree = "<group>"; };
+		52BFF07323DB4645009F1F47 /* GPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPU.swift; sourceTree = "<group>"; };
+		52BFF07423DB4646009F1F47 /* Hardware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hardware.swift; sourceTree = "<group>"; };
+		52BFF07823DB465D009F1F47 /* ImageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHandler.swift; sourceTree = "<group>"; };
+		52BFF07A23DB4671009F1F47 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E45880F4F82B8714DA7B4045 /* Pods_BuildYourPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuildYourPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C132BB90CDA32AB02831A2 /* Pods_BuildYourPC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +71,8 @@
 			children = (
 				52BFF02323DB3066009F1F47 /* BuildYourPC */,
 				52BFF02223DB3066009F1F47 /* Products */,
+				E29DC28C45F80929274A2380 /* Pods */,
+				DB13FBCE08FA0BF7E9F67306 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +88,91 @@
 			isa = PBXGroup;
 			children = (
 				52BFF02423DB3066009F1F47 /* AppDelegate.swift */,
-				52BFF02623DB3066009F1F47 /* SceneDelegate.swift */,
-				52BFF02823DB3066009F1F47 /* ViewController.swift */,
-				52BFF02A23DB3066009F1F47 /* Main.storyboard */,
 				52BFF02D23DB3068009F1F47 /* Assets.xcassets */,
-				52BFF02F23DB3068009F1F47 /* LaunchScreen.storyboard */,
+				52BFF07A23DB4671009F1F47 /* GoogleService-Info.plist */,
+				52BFF05E23DB3B74009F1F47 /* LaunchScreen.storyboard */,
+				52BFF03823DB30F5009F1F47 /* Core */,
+				52BFF03A23DB3108009F1F47 /* ScreenComponents */,
+				52BFF03923DB30FB009F1F47 /* Screens */,
+				52BFF02823DB3066009F1F47 /* ViewController.swift */,
 				52BFF03223DB3068009F1F47 /* Info.plist */,
 			);
 			path = BuildYourPC;
+			sourceTree = "<group>";
+		};
+		52BFF03823DB30F5009F1F47 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				52BFF06C23DB4605009F1F47 /* Managers */,
+				52BFF07123DB461C009F1F47 /* Objects */,
+				52BFF06923DB45FE009F1F47 /* Constants.swift */,
+				52BFF06823DB45FD009F1F47 /* Queues.swift */,
+				52BFF03B23DB3169009F1F47 /* ScreenManagement */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		52BFF03923DB30FB009F1F47 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				52BFF06223DB3ED2009F1F47 /* BuildsViewController.swift */,
+				52BFF06623DB41A2009F1F47 /* BuildDetailsViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		52BFF03A23DB3108009F1F47 /* ScreenComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScreenComponents;
+			sourceTree = "<group>";
+		};
+		52BFF03B23DB3169009F1F47 /* ScreenManagement */ = {
+			isa = PBXGroup;
+			children = (
+				52BFF03C23DB318D009F1F47 /* ContentViewController.swift */,
+				52BFF06023DB3CD1009F1F47 /* NavigationController.swift */,
+				52BFF06423DB3F56009F1F47 /* NavigationBar.swift */,
+			);
+			path = ScreenManagement;
+			sourceTree = "<group>";
+		};
+		52BFF06C23DB4605009F1F47 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				52BFF07823DB465D009F1F47 /* ImageHandler.swift */,
+				52BFF06E23DB4616009F1F47 /* FirestoreManager.swift */,
+				52BFF06D23DB4615009F1F47 /* HardwareManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		52BFF07123DB461C009F1F47 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				52BFF07323DB4645009F1F47 /* GPU.swift */,
+				52BFF07423DB4646009F1F47 /* Hardware.swift */,
+				52BFF07223DB4644009F1F47 /* Motherboard.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		DB13FBCE08FA0BF7E9F67306 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E45880F4F82B8714DA7B4045 /* Pods_BuildYourPC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E29DC28C45F80929274A2380 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B1A17474A469D91E843A1AC /* Pods-BuildYourPC.debug.xcconfig */,
+				1A54AD39C731F80F5F5B516B /* Pods-BuildYourPC.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52BFF03523DB3068009F1F47 /* Build configuration list for PBXNativeTarget "BuildYourPC" */;
 			buildPhases = (
+				DF1CCB4C3921B1B518CCA91E /* [CP] Check Pods Manifest.lock */,
 				52BFF01D23DB3066009F1F47 /* Sources */,
 				52BFF01E23DB3066009F1F47 /* Frameworks */,
 				52BFF01F23DB3066009F1F47 /* Resources */,
+				5A73498DEF376EF2F6D6B6A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,45 +235,80 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52BFF03123DB3068009F1F47 /* LaunchScreen.storyboard in Resources */,
 				52BFF02E23DB3068009F1F47 /* Assets.xcassets in Resources */,
-				52BFF02C23DB3066009F1F47 /* Main.storyboard in Resources */,
+				52BFF05F23DB3B74009F1F47 /* LaunchScreen.storyboard in Resources */,
+				52BFF07B23DB4671009F1F47 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A73498DEF376EF2F6D6B6A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BuildYourPC/Pods-BuildYourPC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BuildYourPC/Pods-BuildYourPC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BuildYourPC/Pods-BuildYourPC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF1CCB4C3921B1B518CCA91E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuildYourPC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52BFF01D23DB3066009F1F47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52BFF03D23DB318D009F1F47 /* ContentViewController.swift in Sources */,
+				52BFF06123DB3CD1009F1F47 /* NavigationController.swift in Sources */,
+				52BFF07623DB4646009F1F47 /* GPU.swift in Sources */,
 				52BFF02923DB3066009F1F47 /* ViewController.swift in Sources */,
+				52BFF07523DB4646009F1F47 /* Motherboard.swift in Sources */,
+				52BFF06F23DB4616009F1F47 /* HardwareManager.swift in Sources */,
+				52BFF06323DB3ED2009F1F47 /* BuildsViewController.swift in Sources */,
 				52BFF02523DB3066009F1F47 /* AppDelegate.swift in Sources */,
-				52BFF02723DB3066009F1F47 /* SceneDelegate.swift in Sources */,
+				52BFF06523DB3F56009F1F47 /* NavigationBar.swift in Sources */,
+				52BFF07723DB4646009F1F47 /* Hardware.swift in Sources */,
+				52BFF07923DB465D009F1F47 /* ImageHandler.swift in Sources */,
+				52BFF06723DB41A2009F1F47 /* BuildDetailsViewController.swift in Sources */,
+				52BFF06A23DB45FE009F1F47 /* Queues.swift in Sources */,
+				52BFF06B23DB45FE009F1F47 /* Constants.swift in Sources */,
+				52BFF07023DB4616009F1F47 /* FirestoreManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		52BFF02A23DB3066009F1F47 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52BFF02B23DB3066009F1F47 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		52BFF02F23DB3068009F1F47 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52BFF03023DB3068009F1F47 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		52BFF03323DB3068009F1F47 /* Debug */ = {
@@ -282,6 +427,7 @@
 		};
 		52BFF03623DB3068009F1F47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B1A17474A469D91E843A1AC /* Pods-BuildYourPC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,7 +437,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZoltanBeke.BuildYourPC.BuildYourPC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZoltanBeke.BuildMyPC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,6 +446,7 @@
 		};
 		52BFF03723DB3068009F1F47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A54AD39C731F80F5F5B516B /* Pods-BuildYourPC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,7 +456,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZoltanBeke.BuildYourPC.BuildYourPC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZoltanBeke.BuildMyPC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
