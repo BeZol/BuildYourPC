@@ -13,7 +13,7 @@ class GPU: Hardware {
 
     var length: Double = 0
     
-    override init(withQueryDocumentSnapshot snapshot: QueryDocumentSnapshot!) {
+    required init(withQueryDocumentSnapshot snapshot: QueryDocumentSnapshot!) {
         super.init(withQueryDocumentSnapshot: snapshot)
         
     }

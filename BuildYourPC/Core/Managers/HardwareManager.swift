@@ -9,19 +9,19 @@
 import UIKit
 import Firebase
 
-class HardwareManager: NSObject {
-    
+class HardwareManager: NSObject,FIRObjectManagerProtocol {
+        
     static let manager  = HardwareManager()
     
     private var hardwares: Array<Hardware> = []
-        
+    
     private override init() {
         super.init()
         
     }
     
-    static func hardwareFrom(snapshot snap: QueryDocumentSnapshot?) -> Hardware?{
-        
+    func objectFrom(snapshot snap: QueryDocumentSnapshot?) -> FIRObject? {
+
         guard let snapshot = snap else {
             return nil
         }
@@ -46,17 +46,20 @@ class HardwareManager: NSObject {
         return object
     }
     
-    func addBunchOfHardwares(hardwares: Array<Hardware>, completionBlock: @escaping () -> Void){
+    func addBunchOfData(objects: Array<FIRObject>, completionBlock: @escaping () -> Void) {
         
         Queues.shared.dataHandlerQueue.async(flags: .barrier) {
 
-            for hardware in hardwares{
+            for hw in objects{
                 
-                if let hardW = self.findHardware(withFirID: hardware.firID){
-                    hardW.update(withObject: hardware)
-                }
-                else{
-                    self.hardwares.append(hardware)
+                if let hardware = hw as? Hardware{
+                    
+                    if let hardW = self.findHardware(withFirID: hardware.firID){
+                        hardW.update(withObject: hardware)
+                    }
+                    else{
+                        self.hardwares.append(hardware)
+                    }
                 }
                 
             }
@@ -65,13 +68,11 @@ class HardwareManager: NSObject {
                 completionBlock()
             }
         }
-
     }
     
-    
-    func add(hardware hard: Hardware?){
+    func add(object obj: FIRObject?) {
         
-        guard let hardware = hard else {
+        guard let exists = obj, let hardware = exists as? Hardware  else {
             return
         }
         
@@ -88,9 +89,9 @@ class HardwareManager: NSObject {
         }
     }
     
-    func update(hardware hard: Hardware?){
+    func update(object obj: FIRObject?) {
         
-        guard let hardware = hard else {
+        guard let exists = obj, let hardware = exists as? Hardware  else {
             return
         }
         
@@ -107,9 +108,9 @@ class HardwareManager: NSObject {
         }
     }
     
-    func remove(hardware hard: Hardware?){
+    func remove(object obj: FIRObject?) {
         
-        guard let hardware = hard else {
+        guard let exists = obj, let hardware = exists as? Hardware  else {
             return
         }
         
@@ -157,7 +158,7 @@ class HardwareManager: NSObject {
         
         DispatchQueue.main.async {
             
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: kNotificationID_Hardware_Updated), object: nil, userInfo: [kNotification_UserInfoKey_Hardware_Updated : firID])
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: kNotificationID_Hardware_Updated), object: nil, userInfo: [kNotification_UserInfoKey_Object_Updated_FIRID : firID])
         }
     }
 }

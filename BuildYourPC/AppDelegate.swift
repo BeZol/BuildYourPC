@@ -19,15 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirestoreManager.manager.setup()
         
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        
+        self.window = UIWindow()
+                
         let startVC = BuildsViewController()
         let nav = NavigationController(navigationBarClass: NavigationBar.self, toolbarClass: nil)
         nav.setViewControllers([startVC], animated: false)
-
+        
         window!.rootViewController = nav
         self.window!.makeKeyAndVisible()
-        
+                    
         return true
     }
 
